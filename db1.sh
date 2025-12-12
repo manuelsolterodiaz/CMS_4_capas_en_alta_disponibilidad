@@ -7,7 +7,7 @@ echo "=== Actualizando sistema ==="
 apt-get update
 
 echo "=== Instalando MariaDB Server y Galera ==="
-DEBIAN_FRONTEND=noninteractive apt-get install -y mariadb-server mariadb-client galera-4 rsync git
+DEBIAN_FRONTEND=noninteractive apt-get install -y mariadb-server mariadb-client galera-4 git
 
 echo "=== Deteniendo MariaDB para configuración ==="
 systemctl stop mariadb || true
