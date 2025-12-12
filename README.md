@@ -8,10 +8,10 @@ Contiene los ficheros VagrantFile y de aprovisionamiento necesarios para esta ta
 ## Índice
 
 1. [Introduccción](#id1)
-2. [Instalaciones](#id2)
+2. [Instalaciones y programas](#id2)
 3. [Scripts](#id3)
 
-# Introducción
+# Introducción <a name="id1"></a>
 
 En esta práctica se va a realizar el despliegue de una aplicacion web que esta alojada en un repositorio público de GitHub en alta disponibiliadd.
 
@@ -45,9 +45,17 @@ Para esta practica se han usado las diferentes redes:
 - Server DB2: Utiliza una unica red.
     - Red privada (reddatabase): 192.168.40.0/24 - utiliza - 192.168.40.12
 
- ## Scripts
+# Programas utilizados <a name="id2"></a>
+Programas/herramientas utilziados:
+- Vagrant/Virtualbix: para desplegar toda la infraestructura.
+- Nginx para el balanceador, servir la aplicación web.
+- Preprocesador PHP-FPM: sirven para gestionar de manera eficiente los procesos de PHP y optimizar significativamente el rendimiento de las aplicaciones web.
+- NFS: sirve para compartir archivos y directorios a través de una red, permitiendo que múltiples ordenadores (clientes) accedan a ellos como si estuvieran en su propio disco local.
+- HAProxy: se usa con bases de datos para distribuir las conexiones y consultas entre múltiples servidores de bases de datos.
+- MariaDB: utilizado somo sistema gestor de base de datos para poder guardar los registros de la aplicación.
+## Scripts <a name="id3"></a>
 
-## Orden para el correcto levantamiento de las máquinas
+## Orden para el correcto levantamiento/funcionamiento de las máquinas
 ```
 vagrant up serverdatos1ManuelSoltero  serverdatos2ManuelSoltero proxyBBDDManuelSoltero serverNFSManuelSoltero  serverweb1ManuelSoltero serverweb2ManuelSoltero balanceadorManuelSoltero
 ```
