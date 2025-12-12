@@ -2,7 +2,7 @@
 
 # Script de aprovisionamiento del Balanceador de Carga Nginx
 # Capa 1 - Expuesta a red pública
-
+# Manuel Soltero Díaz
 
 
 echo "=== Actualizando sistema ==="
